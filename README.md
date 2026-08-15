@@ -19,28 +19,27 @@ A full-stack task management web application with authentication. Users can sign
 - Clean, responsive UI
 
 ## Project structure
-
 ```
 taskapp/
 ├── backend/
-│   ├── server.js          # Express app entry point
-│   ├── db.js               # SQLite setup + schema
-│   ├── middleware/auth.js  # JWT verification middleware
-│   └── routes/
-│       ├── auth.js         # /api/auth/signup, /api/auth/login
-│       └── tasks.js        # /api/tasks CRUD (protected)
+│ ├── server.js # Express app entry point
+│ ├── db.js # SQLite setup + schema
+│ ├── middleware/auth.js # JWT verification middleware
+│ └── routes/
+│ ├── auth.js # /api/auth/signup, /api/auth/login
+│ └── tasks.js # /api/tasks CRUD (protected)
 └── frontend/
-    └── src/
-        ├── api/client.js         # fetch wrapper for the backend
-        ├── context/AuthContext.jsx
-        ├── components/
-        │   ├── ProtectedRoute.jsx
-        │   └── TaskItem.jsx
-        ├── pages/
-        │   ├── Login.jsx
-        │   ├── Signup.jsx
-        │   └── Dashboard.jsx
-        └── App.jsx
+└── src/
+├── api/client.js # fetch wrapper for the backend
+├── context/AuthContext.jsx
+├── components/
+│ ├── ProtectedRoute.jsx
+│ └── TaskItem.jsx
+├── pages/
+│ ├── Login.jsx
+│ ├── Signup.jsx
+│ └── Dashboard.jsx
+└── App.jsx
 ```
 
 ## Running locally
