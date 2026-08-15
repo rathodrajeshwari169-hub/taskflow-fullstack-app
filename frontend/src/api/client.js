@@ -1,4 +1,4 @@
-const BASE_URL = 'const BASE_URL = 'https://taskflow-fullstack-app-h5r9.onrender.com/api';
+const BASE_URL = 'https://taskflow-fullstack-app-h5r9.onrender.com/api';
 
 async function request(path, { method = 'GET', body, token } = {}) {
   const headers = { 'Content-Type': 'application/json' };
